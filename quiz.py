@@ -32,8 +32,9 @@ def test(test_length):
         question_and_answer()
         if check_answer(inputted_answer, correct_answer):
             score = score + 1
-    result = int((score / test_length) * 100)
-    print(f"You got {result}% well done! :)")
+    result_percentage = int((score / test_length) * 100)
+    result_fraction = str(f"{score} / {test_length}")
+    print(f"You got {result_fraction} = {result_percentage}% well done! :)")
 
 mode = str(input("Would you like to practice or test?: ")).upper()
 
