@@ -16,7 +16,7 @@ def question():
 
 def get_answer():
     global inputted_answer
-    inputted_answer = str(input(f"What is {num1} times {num2}: "))
+    inputted_answer = str(input(f"{num1} x {num2}= "))
 
 def question_and_answer():
     question()
